@@ -1,25 +1,25 @@
 class Khop < Formula
   desc "Fast Kubernetes context and namespace switcher"
   homepage "https://github.com/ikchifo/kubehop"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ikchifo/kubehop/releases/download/v0.1.0/khop-aarch64-apple-darwin.tar.xz"
-      sha256 "c3361251d6f5a32e2ad0e2c2fae69fa6b036522b24d924f4807ff76946f51c9b"
+      url "https://github.com/ikchifo/kubehop/releases/download/v0.2.0/khop-aarch64-apple-darwin.tar.xz"
+      sha256 "636f75ff0144cea81366a6e189bd43a91225f4cb32095ab0decde29419c352cc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ikchifo/kubehop/releases/download/v0.1.0/khop-x86_64-apple-darwin.tar.xz"
-      sha256 "91a74aa4f06cfbb8c431f8d0b9710b4b626b8def0a47a7b32de4fe66dfa7d859"
+      url "https://github.com/ikchifo/kubehop/releases/download/v0.2.0/khop-x86_64-apple-darwin.tar.xz"
+      sha256 "345e56460268c3a42b65d582d9a810d7276c10cd4db53589c848912997d68f36"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ikchifo/kubehop/releases/download/v0.1.0/khop-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9a9e77e956254e22788d9f3e896429728527fb7ee5e97fbda58fd8c7dec68bd1"
+      url "https://github.com/ikchifo/kubehop/releases/download/v0.2.0/khop-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7ef082e133eff9f7cf13318567899edcbecccb39b54db38f828713c045090fab"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ikchifo/kubehop/releases/download/v0.1.0/khop-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fc2ce25397893169bcc573b751e5cc5cdc8c0eab7d4266b2ddd9339f14705524"
+      url "https://github.com/ikchifo/kubehop/releases/download/v0.2.0/khop-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7f2088e033003c6d638d45d1f80c28f2561d7373cb0aa7a11d7d8c8569bd65b6"
     end
   end
   license "Apache-2.0"
